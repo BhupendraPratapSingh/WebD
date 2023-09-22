@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>flexbox tutorial</title>
+        <style>
+            .container{
+                height: 544px;
+                width:100%;
+                border:2px solid black;
+                /* Initialize the container as a flexbox */
+                display:flex;
+                /* Flex properties for flex container */
+                flex-direction: column;
+                flex-direction: row-reverse;
+                /* row mein ulte aa jayege items */
+                /* flex-direction: column-reverse; */
+                /* coloumn mein reverse ho jayege */
+                /* flex-wrap: wrap; */
+                /* flex-flow: row-reverse wrap; */
+                /* now reverse and wrap ki property hum dono sath mein kr skte hai */
+                /* justify-content: centre; */
+                /* justify-content: space-between; */
+                /* justify-content: space-evenly; */
+                /* sari space barabar ho jayegi */
+                 /* justify-content: space-around; */
+                /* ki si bhi  dibbe ke dono side space barabar kr do */
+                /* align-items: center; */
+                /* align-items: flex-end; */
+                /* box niche aa jayege */
+                /* align-items: flex-start; */
+                /* box upar aa jayege */
+                /* also use stretch */
+        
+            }
+                .item{
+                width:200px;
+                height:200px;
+                background-color: tomato;
+                border:2px solid green;
+                margin:10px;
+                padding:3px;
+                /* ab tak humne flex properties container le liye dekhi */
+                /* ab hum flex properties for flex item ke liye dekhege */
+            }
+            #item-1{
+                /* flex properties for flex item */
+                /* order: 2; */
+                /* flex-grow: 3; */
+                /* grow ka opposite shrink hota hai */
+            }
+            #item-2{
+                /* order:4; */
+                /* flex-grow: 2; */
+                flex-basis: 320px;
+                /* when flex-direction is set to row flex-basis:will control width */
+                /* when flex-direction is set to coloumn flex-basis:will control height*/
+            }
+            #item-3{
+                /* order:3; */
+                /* flex-grow: 4; */
+                /* jiska order sbse jyada hoga woh sbse last mein jayyega */
+                align-self:flex-start;
+                align-self:flex-end;
+                align-self: center;
+
+
+            }
+        </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+    <div class="item" id="item-1">first box</div>
+    <div class="item" id="item-2">second box</div>
+    <div class="item" id="item-3">third box</div>
+    <!-- <div class="item" id="item-4">fourth box</div> -->
+    <!-- <div class="item" id="item-5">fifth box</div> -->
+    <!-- <div class="item" id="item-6">sixth box</div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>More on CSS Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color:black;
+        font-weight: bold;
+        text-align: center;
+    }
+    div li p{
+        color: yellow;
+        font-weight: bold;
+        background-color: green;
+        /* now ab jo div ke andar jo list hai uske andar jo paragraph hai sirf uske liye  */
+        /* humari property valid hogi */
+        /* now agr ab hum paragraph ke baad list lga bhi de toh woh koi */
+        /* property nhi lega */
+        /* note:order is important */
+        /* div li p or div p li and so on */
+    }
+
+</style>
+<body>  
+    <h1>This is more on selectors</h1>  
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is one more paragraph</p></li>
+                <li>this will remain unaffected</li>
+            </ul>
+       <p>This is paragraph</p> 
+    </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

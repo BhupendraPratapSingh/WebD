@@ -1,0 +1,1 @@
+//program to divide one array into two arrays

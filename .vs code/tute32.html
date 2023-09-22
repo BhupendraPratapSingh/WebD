@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:2px;
+            background-color: khaki;
+            height: 344px;
+        }
+        
+        
+        /* CSS position:static(default) , absolute , relative , fixed , sticky */
+        .box{
+            display:inline-block;
+            /* boxes ek line mein aa jayege */
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            position: relative;
+            /* agar humne relative use krege toh hum top bottom left right property ko use  */
+            /* kr skte hai */
+            top: 34px;
+            left:34px;
+        }
+        #box4{
+            position:fixed;
+            right:4px;
+            /* scroll krne pe box 4 move nhi krega */
+            /* whereas position ko agar sticky krege toh box sath mein move krega */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert , Prompt and Confirm</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+    <script>
+        //confirm is used when you are deleting a file or you doing something in
+        //which you have to give warning to the users
+        let deletePost =confirm("Do you really want to delete this post?");
+        if(deletePost)
+        {
+            console.log("Your Post has been deleted Successfully");
+        }
+        else{
+            console.log("Your Post has not been deleted");
+        }
+        console.log(deletePost);
+        //it will print true in console if we do ok and vice versa.
+    </script>
+    
+</body>
+</html>

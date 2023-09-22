@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>flexbox tutorial</title>
+        <style>
+            .container{
+                height: 544px;
+                width:100%;
+                border:2px solid black;
+                /* Initialize the container as a flexbox */
+                display:flex;
+                /* Flex properties for flex container */
+                flex-direction: column;
+                flex-direction: row-reverse;
+                /* row mein ulte aa jayege items */
+                /* flex-direction: column-reverse; */
+                /* coloumn mein reverse ho jayege */
+                /* flex-wrap: wrap; */
+                flex-flow: row-reverse wrap;
+                /* now reverse and wrap ki property hum dono sath mein kr skte hai */
+        
+            }
+                .item{
+                width:200px;
+                height:200px;
+                background-color: tomato;
+                border:2px solid green;
+                margin:10px;
+                padding:3px;
+            }
+        </style>
+</head>
+<body>
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+    <div class="item" id="item-1">first box</div>
+    <div class="item" id="item-2">second box</div>
+    <div class="item" id="item-3">third box</div>
+    <div class="item" id="item-4">fourth box</div>
+    <div class="item" id="item-5">fifth box</div>
+    <div class="item" id="item-6">sixth box</div>
+    </div>
+    
+</body>
+</html>

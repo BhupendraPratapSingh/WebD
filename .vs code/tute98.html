@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Js Event</title>
+    <!-- Event is a signal that something has happened,like we click on -->
+    <!-- on a button so it is an event -->
+    <!-- events ko listen kiya jata hai -->
+</head>
+<style>
+#btn{
+    padding:10x 14px;
+   background-color: red;
+    border:2px solid black;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+</style>
+<body>
+    <!-- Browser events: -->
+    <!-- click -->
+    <!-- contextmenu -->
+    <!-- mouseover/mouseout -->
+    <!-- mousedown/mouseup -->
+    <!-- mouseemove -->
+    <!-- submit -->
+    <!-- focus -->
+    <!-- DOMcontentLoaded -->
+    <!-- transitionend -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo!</p>
+    </div>
+    <button id="btn"onclick="togglehide()">Show/Hide</button>
+    <!-- agar hum chahte hai ki button pe click krne se  -->
+    <!-- content hide ya show ho jaye then hum click event ko listen krege -->
+    <script>
+        function togglehide()
+        {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if(para.style.display!='none')
+            {
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+    </script>
+    
+</body>
+</html>

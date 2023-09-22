@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height , width, borders and background</title>
+    <style>
+        #firstPara
+        {
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border-width: 4px;
+            border-color: green;
+            border-style: solid;
+            /* also we can write it in one line */
+            border:4px solid green;
+            border-radius: 11px;
+
+        }
+        #secondPara{
+            background-color: rgb(58,243,98) ;
+            height: 100px;
+            width:455px;
+            border-top:2px solid violet;
+            border-right:2px solid rgb(18 ,10 , 133)7,29,107;
+            border-bottom: 2px solid green;
+            border-left:2px solid powderblue;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius:8px ;
+            border-bottom-right-radius:24px;
+        }
+       #thirdPara{
+        height: 100px;
+        width: 455px;
+        background-image: url("https://wallpapercave.com/wp/wp2722874.jpg");
+        background-repeat: no-repeat;
+        /* background image baar baar repeat nhi  hogi */
+        /* background-repeat: repeat-x;sirf x axis mein repeat hogi */
+        /* background-repeat: repeat-y;sirf y axis mein repeat hogi*/
+        background-position: center center;
+        /* background-position: centre top; try this also*/
+         /* background-position: top top; try this also*/
+         /* background-position: centre right; try this also*/
+        
+       }
+        
+        
+          
+
+    </style>
+</head>
+<body>
+    <h3>This is a heading</h3>
+    <p id="firstPara">This is a paragraph</p>
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is my second paragraph</p>
+    <h3>This is my third paragraph</h3>
+    <p id="ThirdPara">This is my third paragraph</p>
+    
+</body>
+</html>
